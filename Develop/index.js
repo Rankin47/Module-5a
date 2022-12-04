@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#currentDay").text
+ 
 
   $(".saveBtn").on("click", function () {
     console.log(this);
@@ -34,7 +34,7 @@ $(document).ready(function () {
         $(this).addClass("past");
         $(this).removeClass("future");
         $(this).removeClass("present");
-      } else if (block === current) {
+      } else if (block == current) {
         $(this).removeClass("past");
         $(this).addClass("present");
         $(this).removeClass("future");
