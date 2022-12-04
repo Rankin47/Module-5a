@@ -4,6 +4,7 @@ $(document).ready(function () {
   $(".saveBtn").on("click", function () {
     console.log(this);
     var time = $(this).parent().attr("id");
+   
     var info = $(this).siblings(".description").val();
     localStorage.setItem(time, info);
   });
